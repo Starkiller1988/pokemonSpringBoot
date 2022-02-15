@@ -3,10 +3,13 @@ package de.neuefische.pokemonList;
 public class Pokemon {
     private final String id;
     private final String name;
+    private final String image;
 
-    public Pokemon(String id, String name){
+    public Pokemon(String id, String name, String image){
         this.id = id;
         this.name = name;
+        this.image = image;
+
 
     }
 
@@ -18,5 +21,7 @@ public class Pokemon {
         return name;
     }
 
-
+    public String getImage() {
+        return image;
+    }
 }
